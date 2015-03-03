@@ -6,8 +6,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CambealoApp.Models
 {
-    public class user
+    public class User
     {
+        [Key]
         public int ID { set; get; }
         public string Fullname { set; get; }
         public string Name { set; get; }
@@ -16,7 +17,6 @@ namespace CambealoApp.Models
         public string Mail { set; get; }
         public string Telephon { set; get; }
         public int Old { set; get; }
-
 
     }
 }
